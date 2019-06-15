@@ -4,6 +4,7 @@
 
 ## - Front-end (Angular.js)
     Introdução
+        - Execute o back-end antes
         - Instale o Angular através do comando $npm install -g @angular/cli
         - Executar o comando $npm install, para baixar as dependencias do projeto
         - Executar comando npm start, para subir o servidor
