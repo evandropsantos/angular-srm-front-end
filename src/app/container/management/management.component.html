@@ -1,0 +1,42 @@
+<app-bread-crumb></app-bread-crumb>
+<app-title-component></app-title-component>
+        
+<section class="information">
+    <div class="box">
+        <h2 class="sub-title">Atalhos</h2>
+        
+        <nav class="list-navigation">
+            <dl class="buttons-list">
+                <dt>Operacional</dt>
+                <dd>
+                    <app-button-component 
+                        *ngFor="let button of buttons.operacional" 
+                        [title]="button.name"
+                        class="button-operation">
+                    </app-button-component>   
+                </dd>
+            </dl>
+            
+            <dl class="buttons-list">
+                <dt>Geral</dt>
+                <dd>
+                    <app-button-component 
+                        *ngFor="let button of buttons.geral" 
+                        [title]="button.name"
+                        class="button-general">
+                    </app-button-component>
+                </dd>
+            </dl>
+        </nav>
+    </div>
+    <div class="box">
+        <h2 class="sub-title">
+            <span>Atalhos</span>
+            <span class="alert-date">Últimos 5 dias</span>
+        </h2>
+        <ul class="alert-list">
+            <li><app-counter-component text="Notas Canceladas"></app-counter-component></li>
+            <li><app-counter-component text="Assinaturas Digital"></app-counter-component></li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+.bread-crumb {
+    font-size: 14px;
+    font-size: (14/16)+0rem;
+    font-weight: 400; 
+    font-style: normal;
+    color: darken( #EAEAEA, 30%);
+
+    span {
+        &::before {
+            content: ">";
+            padding: 0 15px;
+        }
+
+        &:first-child {
+            padding-left: 0;
+            
+            &::before { display: none; }
+        }
+    }
+}

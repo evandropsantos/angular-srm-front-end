@@ -1,0 +1,49 @@
+.grades-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alert-box { 
+    line-height: 30px;
+    border: 1px solid #4497D5;
+    color: darken( #EAEAEA, 40% );
+    width: 115px;
+    position: relative;
+
+    &::after, &::before {
+        content: "";
+        background-color: #00223D;
+        width: 8px;
+        height: 1px;
+        position: absolute;
+        top: 14px;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+        right: 10px;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        right: 5px;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 0 20px;
+
+        color: darken( #EAEAEA, 40% );
+        &::-ms-expand { display: none; }
+
+        
+        font-size: 14px;
+        font-size: (14/16)+0rem;
+    }
+}

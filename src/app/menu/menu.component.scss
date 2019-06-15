@@ -1,0 +1,99 @@
+$path: '../../assets/';
+
+.navigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 16%;
+    height: 100%;
+    background-color: #00223D;
+    border-right: 3px solid #EAEAEA;
+}
+
+.search-bar {
+    background-color: white;
+    height: 55px;
+    position: relative;
+
+    button {
+        width: 32px;
+        height: 32px;
+        background: url("#{$path}search.png");
+        border: none;
+        cursor: pointer;
+
+        text-indent: -9000em;
+        font-size: 0;
+
+        position: absolute;
+        right: 10px;
+        top: 12px;
+    }
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    outline: none;
+    border: none;
+    color: darken( #EAEAEA, 40%);
+    text-align: center;
+
+    font-size: 16px;
+    font-size: (16/16)+0rem;
+}
+
+.menu {
+    a {
+        display: flex;
+        align-items: center;
+
+        line-height: 45px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px solid #4497D5;
+
+        font-weight: 400; 
+        font-style: normal;
+
+        font-size: 16px;
+        font-size: (16/16)+0rem;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            margin: 0 15px;
+        }
+    }
+
+    .manager {
+        &::before { background-image: url("#{$path}small-world.png"); }
+    }
+
+    .account {
+        &::before { background-image: url("#{$path}small-arroba.png"); }
+    }
+
+    .receivable {
+        &::before { background-image: url("#{$path}small-graphic.png"); }
+    }
+
+    .active {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 13px;
+           
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent #EAEAEA transparent transparent;
+        }
+    }
+}

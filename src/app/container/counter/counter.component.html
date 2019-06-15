@@ -1,0 +1,14 @@
+<article class="grades-box">
+    <label class="alert-text" for="selectAction">{{quantity}} {{text}} </label>
+
+    <div class="alert-box">
+        <select
+            name="acoes" 
+            id="selectAction" 
+            (change) = "getItem($event.target)">
+            <option value="action">Ações</option>
+            <option value="add">Inserir</option>
+            <option value="remove">Remover</option>
+        </select>
+    </div>
+</article>
